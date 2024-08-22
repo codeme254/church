@@ -13,3 +13,67 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   color: #000000; }
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; }
+  .contact__location {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .contact__icon {
+    fill: #000000; }
+  .contact__social {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000000;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4; }
+
+.logo {
+  text-decoration: none;
+  color: #000000; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem; }
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem; }
+  .navigation__link {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: color 0.2s; }
+    .navigation__link:hover {
+      color: #ce0f3d; }
+  .navigation__btn {
+    align-self: center; }
+
+.btn {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .btn--primary {
+    background-color: #ce0f3d;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s; }
+    .btn--primary:hover {
+      background-color: transparent;
+      color: #ce0f3d;
+      border: 2px solid #ce0f3d; }

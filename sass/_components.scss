@@ -1,0 +1,85 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__icon {
+    fill: $color-black;
+  }
+
+  &__social {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: $color-black;
+    border-left: 1px solid $color-white-light;
+    border-right: 1px solid $color-white-light;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  color: $color-black;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  &--primary {
+    background-color: $color-primary;
+    padding: 1rem 2rem;
+    color: $color-white;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-primary;
+      border: 2px solid $color-primary;
+    }
+  }
+}
