@@ -3,30 +3,37 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   &__location {
     display: flex;
     align-items: center;
     gap: 1rem;
+    color: $color-white;
   }
 
   &__icon {
-    fill: $color-black;
+    fill: $color-white;
+  }
+
+  &__socials {
+    display: flex;
   }
 
   &__social {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     text-decoration: none;
-    color: $color-black;
-    border-left: 1px solid $color-white-light;
-    border-right: 1px solid $color-white-light;
+    color: $color-white;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
 
 .logo {
   text-decoration: none;
-  color: $color-black;
+  color: $color-white;
 }
 
 .navigation {
@@ -34,6 +41,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+  padding-top: 0.3rem;
 
   &__list {
     list-style: none;
@@ -46,8 +54,8 @@
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: $color-black;
-    font-weight: 600;
+    color: $color-white;
+    font-weight: 500;
     font-size: 1.5rem;
     transition: color 0.2s;
 
