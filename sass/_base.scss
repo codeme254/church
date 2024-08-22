@@ -12,8 +12,14 @@ html {
   font-size: 62.5%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   color: $color-black;
+  max-width: 112.5em;
 }

@@ -9,10 +9,15 @@
 html {
   font-size: 62.5%; }
 
+html,
+body {
+  overflow-x: hidden; }
+
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-  color: #000000; }
+  color: #000000;
+  max-width: 112.5em; }
 
 .contact {
   display: flex;
@@ -77,3 +82,37 @@ body {
       background-color: transparent;
       color: #ce0f3d;
       border: 2px solid #ce0f3d; }
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero__textbox {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    @media screen and (max-width: 37.5em) {
+      .hero__textbox {
+        width: 100%; } }
+  .hero__subtitle {
+    text-transform: uppercase;
+    color: #ce0f3d;
+    font-size: 2rem;
+    letter-spacing: 1.8px;
+    text-align: center; }
+  .hero__title {
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center; }
+  .hero__text {
+    color: #f7e8f0;
+    text-align: center; }
