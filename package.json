@@ -1,0 +1,14 @@
+{
+  "name": "church",
+  "version": "1.0.0",
+  "description": "landing page for a church",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Dennis Otwoma (https://github.com/codeme254)",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
