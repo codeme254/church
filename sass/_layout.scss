@@ -18,3 +18,11 @@
     flex-direction: column;
   }
 }
+
+.about-section {
+  display: flex;
+
+  @media screen and (max-width: 56.25em) {
+    flex-direction: column;
+  }
+}

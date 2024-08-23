@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.u-marg-bottom-lg {
+  margin-bottom: 4rem; }
+
 *,
 *::after,
 *::before {
@@ -35,6 +38,12 @@ body {
   @media screen and (max-width: 50em) {
     .features {
       width: 100%;
+      flex-direction: column; } }
+
+.about-section {
+  display: flex; }
+  @media screen and (max-width: 56.25em) {
+    .about-section {
       flex-direction: column; } }
 
 .contact {
@@ -165,6 +174,35 @@ body {
   .features-description__text {
     line-height: 1.7;
     color: #fff; }
+
+.title__sub {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #ce0f3d;
+  letter-spacing: 1.4px; }
+
+.title__main {
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 1.3; }
+
+.about__image {
+  width: 50%; }
+  @media screen and (max-width: 56.25em) {
+    .about__image {
+      width: 90%;
+      margin: 0 auto; } }
+
+.about__textbox {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 5rem 8rem; }
+
+.about__text {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  line-height: 1.6; }
 
 .hero {
   min-height: 100vh;
