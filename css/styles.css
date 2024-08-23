@@ -25,6 +25,18 @@ body {
   left: 0;
   width: 100%; }
 
+.features {
+  width: 65%;
+  min-width: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem; }
+  @media screen and (max-width: 50em) {
+    .features {
+      width: 100%;
+      flex-direction: column; } }
+
 .contact {
   display: flex;
   justify-content: space-between;
@@ -95,6 +107,65 @@ body {
       color: #ce0f3d;
       border: 2px solid #ce0f3d; }
 
+.feature {
+  width: 30%; }
+  @media screen and (max-width: 50em) {
+    .feature {
+      width: 100%; } }
+  .feature__icon {
+    font-size: 5rem;
+    margin-bottom: 0.5rem; }
+  .feature__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.8rem; }
+  .feature__subtitle {
+    text-transform: capitalize;
+    color: #ce0f3d;
+    position: relative;
+    margin-bottom: 2rem; }
+    .feature__subtitle::after {
+      content: "";
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 20%;
+      height: 2px;
+      background-color: #ce0f3d; }
+  .feature__text {
+    font-size: 1.5rem;
+    line-height: 1.7; }
+
+.features-description {
+  background-color: #ce0f3d;
+  min-height: 120%;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  width: 35%;
+  z-index: 100; }
+  @media screen and (max-width: 62.5em) {
+    .features-description {
+      position: relative;
+      top: 0;
+      right: 0; } }
+  @media screen and (max-width: 50em) {
+    .features-description {
+      width: 100%; } }
+  .features-description__title {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .features-description__text {
+    line-height: 1.7;
+    color: #fff; }
+
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
@@ -129,3 +200,10 @@ body {
   .hero__text {
     color: #f7e8f0;
     text-align: center; }
+
+.features-section {
+  padding: 5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  position: relative; }

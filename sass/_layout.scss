@@ -4,3 +4,17 @@
   left: 0;
   width: 100%;
 }
+
+.features {
+  width: 65%;
+  min-width: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @media screen and (max-width: 50em) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
