@@ -55,3 +55,15 @@
   align-items: baseline;
   position: relative;
 }
+
+.stat-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 2rem;
+  background-color: $color-primary;
+  color: $color-white;
+  @media screen and (max-width: 43.75em) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

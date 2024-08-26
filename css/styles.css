@@ -20,13 +20,16 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   color: #000000;
-  max-width: 112.5em; }
+  max-width: 112.5em;
+  margin: 0 auto; }
 
 .header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%; }
 
 .features {
   width: 65%;
@@ -204,6 +207,28 @@ body {
   margin-bottom: 2rem;
   line-height: 1.6; }
 
+.stat {
+  text-align: center; }
+  @media screen and (max-width: 43.75em) {
+    .stat {
+      text-align: left; } }
+  .stat__title {
+    text-transform: uppercase;
+    flex: 0 0 30%;
+    font-size: 2.5rem; }
+    @media screen and (max-width: 56.25em) {
+      .stat__title {
+        font-size: 2rem; } }
+  .stat__number {
+    font-size: 2.5rem; }
+    @media screen and (max-width: 56.25em) {
+      .stat__number {
+        font-size: 2rem; } }
+  .stat__category {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px; }
+
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
@@ -245,3 +270,14 @@ body {
   flex-wrap: wrap;
   align-items: baseline;
   position: relative; }
+
+.stat-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 2rem;
+  background-color: #ce0f3d;
+  color: #fff; }
+  @media screen and (max-width: 43.75em) {
+    .stat-section {
+      flex-direction: column;
+      gap: 2rem; } }
