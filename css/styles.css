@@ -5,6 +5,9 @@
 .u-center {
   text-align: center; }
 
+.u-text-white > * {
+  color: white !important; }
+
 *,
 *::after,
 *::before {
@@ -295,6 +298,36 @@ body {
       color: #ce0f3d;
       border: 2px solid currentColor; }
 
+.testimonies {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; }
+  @media screen and (max-width: 43.75em) {
+    .testimonies {
+      flex-direction: column; } }
+
+.testimony {
+  background-color: #fff;
+  display: flex;
+  padding: 4rem;
+  gap: 2rem;
+  border-radius: 5px; }
+  @media screen and (max-width: 62.5em) {
+    .testimony {
+      flex-direction: column; } }
+  .testimony__avatar {
+    --size: 10rem;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%; }
+  .testimony__text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 2rem; }
+  .testimony__author {
+    text-transform: capitalize;
+    font-weight: 600; }
+
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
@@ -350,3 +383,7 @@ body {
 
 .sermons-section {
   padding: 15rem 1.5rem; }
+
+.testimonies-section {
+  padding: 15rem 2rem;
+  background-color: #ce0f3d; }

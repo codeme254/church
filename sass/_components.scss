@@ -312,3 +312,44 @@
     }
   }
 }
+
+.testimonies {
+  display: flex;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+  gap: 2rem;
+
+  @media screen and (max-width: 43.75em) {
+    flex-direction: column;
+  }
+}
+
+.testimony {
+  background-color: $color-white;
+  display: flex;
+  padding: 4rem;
+  gap: 2rem;
+  border-radius: 5px;
+
+  @media screen and (max-width: 62.5em) {
+    flex-direction: column;
+  }
+
+  &__avatar {
+    --size: 10rem;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  &__author {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
